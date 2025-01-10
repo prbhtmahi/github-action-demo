@@ -1,4 +1,4 @@
-name: Testing workflow local and global variables
+name: local and global variables
 
 on:
   push:
