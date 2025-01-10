@@ -9,10 +9,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Example step
-            run: echo This is the build configuration stored in a global workflow variable: $BUILD_CONFIGURATION
+            run: echo This is the build configuration stored in a global workflow variable $BUILD_CONFIGURATION
     job2:
        needs: job1
        runs-on: ubuntu-latest
        steps:
          - name: Example step
-           run:  echo Here too we can see the same build configuration: $BUILD_CONFIGURATION
+           run:  echo Here too we can see the same build configuration $BUILD_CONFIGURATION
