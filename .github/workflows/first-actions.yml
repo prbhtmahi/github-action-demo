@@ -14,6 +14,7 @@ jobs:
     - uses: actions/check@v3
     - name: Set up Python
       uses: actions/setup-python@v2
+      working-directory: ./src
       with:
         python-version: ${{ matrix.python-version }}
 
