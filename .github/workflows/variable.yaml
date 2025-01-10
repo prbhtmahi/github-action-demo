@@ -1,0 +1,18 @@
+name: Example workflow
+on:
+  push:
+      branches: [main]
+env:
+   BUILD_CONFIGURATION: release
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Example step
+            run: echo This is the build configuration stored in a global workflow variable: $BUILD_CONFIGURATION
+    job2:
+       needs: job1
+       runs-on: ubuntu-latest
+       steps:
+         - name: Example step
+           run:  echo Here too we can see the same build configuration: $BUILD_CONFIGURATION
