@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  build:
+  name: hello-world
+  runs-on: ubuntu-release
+  steps:
+   - uses: actions/checkout@v2
+   - name: write a multiline message
+     run: |
+       echo This is demo file a
+       echo very basic read and easy-to-understand workflow
