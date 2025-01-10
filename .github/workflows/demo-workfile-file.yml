@@ -1,12 +1,13 @@
+name: demo-workfile
+
 on: [push]
 
 jobs:
   build:
-  name: hello-world
-  runs-on: ubuntu-release
+    runs-on: ubuntu-latest
   steps:
-   - uses: actions/checkout@v2
-   - name: write a multiline message
-     run: |
-       echo This is demo file a
-       echo very basic read and easy-to-understand workflow
+    - uses: actions/checkout@v2
+    - name: Write a multi-line message
+      run: |
+        echo This demo file shows a 
+        echo very basic and easy-to-understand workflow.
