@@ -1,8 +1,9 @@
 name: Testing workflow local and global variables
 
 on:
- worlflow_dispatch
-
+  push:
+     branches: [main]
+ 
 env:
   cloud: aws-cloud
 
